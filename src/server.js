@@ -3,11 +3,16 @@ const server = express()
 
 server.use(express.static("public"))
 
-.get("/", (req, res) => {                      //arrow function, não preciso nomear
-    return res.sendfile(__dirname + "/views/index.html")
+.get("/", (req, res) => {                      //arrow function, para direcionar para a pagina setada
+    return res.sendFile(__dirname + "/views/index.html")
 
 })
-.get("/study", (req, res) =>{
-    return res.send("Página study")
+.get("/study", (req, res) => {                      //arrow function, para rotear para a pagina setada
+    return res.sendFile(__dirname + "/views/study.html")
+
+})
+.get("/give-classes", (req, res) => {                      //arrow function, para direcionar para a pagina setada
+    return res.sendFile(__dirname + "/views/give-classes.html")
+
 })
 .listen(5500)
