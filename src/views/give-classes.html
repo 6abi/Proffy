@@ -34,6 +34,7 @@
        </header>
 
        <main>
+            <form action="" id = "create-class">
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -62,6 +63,7 @@
                     <div class="select-block">
                         <label for="subject">Máteria</label>
                         <select name="subject" id="subject" required>
+                            <option value="">Selecione uma opção</option>
                             {%for subject in subjects %}
                                 <option value="{{loop.index}}">
                                     {{subject}}
@@ -86,7 +88,7 @@
                     <div class="schedule-item">
                         <div class="select-block">
                             <label for="weekday">Dia da semana</label>
-                            <select name="weekday[]"required>
+                            <select name="weekday[]" required>
                                 <option value="">Selecione uma opção</option>
                                 {%for weekday in weekdays %}
                                     <option value="{{loop.index0}}">
@@ -105,13 +107,16 @@
                         </div>
                     </div>
                 </fieldset>
+            </form>
+
            <footer>
                <p>
                    <img src="/images/icons/warning.svg" alt="Aviso importante">
                     importante! <br>
                     Preencha todos os dados
                 </p>
-                <button type="submit" form="creat-class"> Salvar cadastro</button>
+
+                <button type="submit" form="create-class"> Salvar cadastro</button>
            </footer>
        </main>
     </div>

@@ -48,14 +48,12 @@ body {
 
 body,
 input,
+button,
 textarea{
     font: 500 1.6rem Poppis;
     color: var(--color-text-base);
 }
-button{
-    font: 500 1.6rem Poppis;
-    color: var(--color-button-text) !important;
-}
+
  #container{
     width: 100vw;
     max-width: 700px;

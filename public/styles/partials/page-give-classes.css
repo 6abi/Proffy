@@ -47,7 +47,7 @@
 }
 
 #page-give-classes fieldset legend button:hover{
-    color: var(--color-primary-dark);
+    color: var(--color-primary-darker);
 }
 
 #page-give-classes fieldset+fieldset{

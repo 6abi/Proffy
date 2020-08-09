@@ -71,8 +71,14 @@ function pageStudy(req, res){
 }
 
 function pageGiveClasses(req, res){
-    return res.render("give-classes.html", {subjects, weekdays})
+    const data = req.query
+    // const isNotEmpty = Object.keys(data).length > 0
 
+    // if(isNotEmpty){
+    //     proffys.push(dados)
+    //     return res.redirect("/study")
+    // }
+    return res.render("give-classes.html", {subjects, weekdays})
 }
 
 const express = require('express')     
