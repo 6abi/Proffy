@@ -1,6 +1,9 @@
 
 #page-landing{
     background: var(--color-primary);
+    font-family: Archivo;
+    color: var(--color-text-in-primary);
+
 }
 
 #page-landing #container{
@@ -63,6 +66,8 @@
 
 .buttons-container a.study{
     background-color: var(--color-primary-lighter);
+    color: var(--color-button-text);
+
 }
 
 .buttons-container a.study:hover{
@@ -72,6 +77,8 @@
 .buttons-container a.give-classes{
     background-color: var(--color-secondary);
     margin-right: 0;
+    color: var(--color-button-text);
+
 }
 
 .buttons-container a.give-classes:hover{
