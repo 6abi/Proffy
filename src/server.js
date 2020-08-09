@@ -38,13 +38,35 @@ const proffys = [
     }
 ]
 
-//funções das pages - renderizar
+const subjects = [
+    "Artes",
+    "Biologia",
+    "Ciências",
+    "Educação física",
+    "Física",
+    "Geografia",
+    "História",
+    "Matemática",
+    "Português",
+    "Químicas",
+]
+
+const weekdays = [
+    "Domingo",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
+]
 function pageLanding(req, res){
     return res.render("index.html")
 }
 
 function pageStudy(req, res){
-    return res.render("study.html", {proffys})
+    const filters = req.query
+    return res.render("study.html", {proffys, filters, subjects, weekdays})
 
 }
 
