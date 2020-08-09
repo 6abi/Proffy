@@ -6,14 +6,16 @@
     <title>Proffy | Sua plataforma de estudos online</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="theme-color" content="#8257E5"> 
-
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/partials/header.css'>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/partials/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/partials/header.css'> 
     <link rel='stylesheet' type='text/css' media='screen' href='styles/partials/page-give-classes.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/partials/forms.css'>
 
-    <script src='main.js'></script>
+    <script src='/scripts/addField.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    
+    <script src="/scripts/addField.js" defer></script>
     </head>
 <body id="page-give-classes">
 
@@ -32,7 +34,6 @@
        </header>
 
        <main>
-           <form action="" id="creat-class">
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -82,9 +83,9 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="schedule-items">
                     <legend>Horários disponíveis
-                        <button id = "add-time">+ Novo Horário</button>
+                        <button id = "add-time" type="button">+ Novo Horário</button>
                     </legend>
 
                     <div class="schedule-item">
@@ -111,7 +112,6 @@
                         </div>
                     </div>
                 </fieldset>
-           </form>
            <footer>
                <p>
                    <img src="/images/icons/warning.svg" alt="Aviso importante">
