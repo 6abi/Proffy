@@ -53,7 +53,7 @@ textarea{
     color: var(--color-text-base);
 }
  #container{
-    width: 90vw;
+    width: 100vw;
     max-width: 700px;
     /*border: 1px solid red;
     padding-top: 10px;
